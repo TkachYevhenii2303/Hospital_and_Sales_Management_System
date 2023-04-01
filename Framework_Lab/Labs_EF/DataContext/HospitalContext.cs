@@ -15,6 +15,8 @@ namespace Labs_EF.DataContext
         
         public DbSet<Visitations> Visitations { get; set; }
 
+        public DbSet<Doctors> Doctors { get; set; }
+
         // Method for set base configureation for all models in database
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
