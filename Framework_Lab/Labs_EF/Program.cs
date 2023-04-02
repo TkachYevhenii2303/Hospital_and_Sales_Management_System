@@ -20,6 +20,11 @@ builder.Services.AddDbContext<HospitalContext>(options =>
 
 // Dependency Injections 
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+builder.Services
+    .AddScoped<IUnit_of_Work, Unit_of_Work>()
+    .AddScoped<IDoctrosRepository, DoctorsRepository>()
+    .AddScoped<IPatientsRepository, PatientsRepository>()
+    .AddScoped<IVisitationsRepository, VisitationsRepository>();
 
 var app = builder.Build();
 

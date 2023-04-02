@@ -4,7 +4,7 @@
     {
         public TEntity? Entity { get; set; }
 
-        public string Message { get; set; } = string.Empty;
+        public string Message { get; set; } = "All operations are ok!";
 
         public bool Success { get; set; } = true;
     }

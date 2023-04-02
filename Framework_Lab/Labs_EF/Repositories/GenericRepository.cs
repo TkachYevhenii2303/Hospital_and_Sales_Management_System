@@ -21,14 +21,22 @@ namespace Labs_EF.Repositories
             return SpecificationEvaluator<TEntity>.Get_Query(_context.Set<TEntity>().AsQueryable(), specifications);
         }
 
-        public async Task<IEnumerable<ServicesResponse<TEntity>>> Get_all_Information()
+        public async Task<ServicesResponse<IEnumerable<TEntity>>> Get_all_Information()
         {
-            return await _context.Set<ServicesResponse<TEntity>>().ToListAsync();
+            var services_Response = new ServicesResponse<IEnumerable<TEntity>>();
+            var result = await _context.Set<TEntity>().ToListAsync();
+
+            services_Response.Entity = result.Select(x => x).ToList();  
+            return services_Response;
         }
 
         public async Task<ServicesResponse<TEntity>?> Get_information_ID(Guid ID)
         {
-            return await _context.Set<ServicesResponse<TEntity>>().FirstOrDefaultAsync(result => result.Entity!.Id == ID);
+            var services_Response = new ServicesResponse<TEntity>();
+            var result = _context.Set<TEntity>().FirstOrDefault(x => x.Id == ID);
+
+            services_Response.Entity = result;
+            return services_Response;
         }
     }
 }
