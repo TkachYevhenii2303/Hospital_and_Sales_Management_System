@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Bogus" Version="34.0.2" />
+    <PackageReference Include="Mapster" Version="7.3.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.4">
       <PrivateAssets>all</PrivateAssets>
@@ -21,7 +23,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <Folder Include="Mapper\" />
+    <Folder Include="Services\" />
   </ItemGroup>
 
 </Project>

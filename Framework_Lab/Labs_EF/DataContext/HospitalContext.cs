@@ -1,4 +1,6 @@
-﻿using Labs_EF.Entities;
+﻿using Labs_EF.DataContext.Configurations;
+using Labs_EF.Entities;
+using Labs_EF.Generator;
 using Microsoft.EntityFrameworkCore;
 
 namespace Labs_EF.DataContext
@@ -17,6 +19,8 @@ namespace Labs_EF.DataContext
 
         public DbSet<Doctors> Doctors { get; set; }
 
+        public DbSet<Prescription> Prescriptions { get; set; }
+
         // Method for set base configureation for all models in database
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -25,7 +29,7 @@ namespace Labs_EF.DataContext
                 .Where(result => typeof(Entity).IsAssignableFrom(result.ClrType)))
             {
                 modelBuilder.Entity(entity.Name).Property(nameof(Entity.Id))
-                    .IsRequired().HasDefaultValueSql("NewID()");
+                    .IsRequired().HasDefaultValueSql("NEWID()");
 
                 modelBuilder.Entity(entity.Name).Property(nameof(Entity.Created_at))
                     .IsRequired().HasDefaultValueSql("GetDate()");
@@ -34,11 +38,18 @@ namespace Labs_EF.DataContext
                     .IsRequired().HasDefaultValueSql("GetDate()");
             }
 
-            // Rename the Join Table title
-            modelBuilder.Entity<Patients>()
-                .HasMany(entity => entity.Medicaments)
-                .WithMany(entity => entity.Patients)
-                .UsingEntity(result => result.ToTable("Prescriptions"));
+            modelBuilder.ApplyConfiguration(new DoctorsConfigurations());
+            modelBuilder.ApplyConfiguration(new PatientsConfigurations());
+            modelBuilder.ApplyConfiguration(new PrescriptionConfigurations());
+
+            // Generate Fake Data using Bogus
+          /*  DataGenerator.Generate_all_Data();
+            modelBuilder.Entity<Patients>().HasData(DataGenerator.Patients);
+            modelBuilder.Entity<Doctors>().HasData(DataGenerator.Doctors);
+            modelBuilder.Entity<Visitations>().HasData(DataGenerator.Visitations);
+            modelBuilder.Entity<Diagnoses>().HasData(DataGenerator.Diagnoses);
+            modelBuilder.Entity<Medicaments>().HasData(DataGenerator.Medicaments);
+            modelBuilder.Entity<Prescription>().HasData(DataGenerator.Prescriptions);*/
         }
     }
 }

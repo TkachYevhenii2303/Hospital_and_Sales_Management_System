@@ -1,4 +1,5 @@
 using Labs_EF.DataContext;
+using Labs_EF.Generator;
 using Labs_EF.Repositories;
 using Labs_EF.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;

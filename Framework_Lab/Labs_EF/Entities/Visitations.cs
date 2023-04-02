@@ -9,6 +9,12 @@ namespace Labs_EF.Entities
 
         public DateTime Date { get; set; }
 
-        public Patients Patients { get; set; }
+        public Guid Patients_ID { get; set; }
+
+        public Guid Doctors_ID { get; set; }
+
+        public Patients Patients { get; set; } = null!;
+
+        public Doctors Doctors { get; set; } = null!;
     }
 }

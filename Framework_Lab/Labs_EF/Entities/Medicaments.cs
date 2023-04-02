@@ -4,6 +4,6 @@
     {
         public string Medicaments_title { get; set; } = String.Empty;
 
-        public ICollection<Patients> Patients { get; set; }
+        public ICollection<Prescription> Prescriptions { get; set; }
     }
 }

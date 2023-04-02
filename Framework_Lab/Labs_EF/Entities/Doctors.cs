@@ -8,7 +8,7 @@ namespace Labs_EF.Entities
         public string Doctors_name { get; set; } = String.Empty;
 
         [Required]
-        public string Specialty { get; set; } = String.Empty;
+        public Specialty Specialty { get; set; }
 
         public ICollection<Visitations> Visitations { get; set; }
     }

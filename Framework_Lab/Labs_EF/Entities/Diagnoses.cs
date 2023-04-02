@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Labs_EF.Entities
 {
@@ -10,6 +11,8 @@ namespace Labs_EF.Entities
         [Required]
         public string Diagnoses_title { get; set; } = String.Empty;
 
-        public Patients Patients { get; set; }
+        public Guid Patiens_ID { get; set; }
+
+        public Patients Patients { get; set; } = null!;
     }
 }

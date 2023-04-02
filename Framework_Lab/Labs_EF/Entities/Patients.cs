@@ -22,6 +22,6 @@ namespace Labs_EF.Entities
 
         public ICollection<Visitations> Visitations { get; set; }
 
-        public ICollection<Medicaments> Medicaments { get; set; }
+        public ICollection<Prescription> Prescriptions { get; set; }
     }
 }
