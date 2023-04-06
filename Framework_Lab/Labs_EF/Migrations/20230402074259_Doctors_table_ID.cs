@@ -38,7 +38,7 @@ namespace Labs_EF.Migrations
                 table: "Visitations",
                 column: "DoctorsId",
                 principalTable: "Doctors",
-                principalColumn: "Id",
+                principalColumn: "ID",
                 onDelete: ReferentialAction.Cascade);
         }
 
@@ -70,7 +70,7 @@ namespace Labs_EF.Migrations
                 table: "Visitations",
                 column: "DoctorsId",
                 principalTable: "Doctors",
-                principalColumn: "Id");
+                principalColumn: "ID");
         }
     }
 }

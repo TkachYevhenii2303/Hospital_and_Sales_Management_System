@@ -57,7 +57,7 @@ namespace Labs_EF.Migrations
                 table: "Diagnoses",
                 column: "Patiens_ID",
                 principalTable: "Patients",
-                principalColumn: "Id",
+                principalColumn: "ID",
                 onDelete: ReferentialAction.Cascade);
 
             migrationBuilder.AddForeignKey(
@@ -65,7 +65,7 @@ namespace Labs_EF.Migrations
                 table: "Visitations",
                 column: "Doctors_ID",
                 principalTable: "Doctors",
-                principalColumn: "Id",
+                principalColumn: "ID",
                 onDelete: ReferentialAction.Cascade);
 
             migrationBuilder.AddForeignKey(
@@ -73,7 +73,7 @@ namespace Labs_EF.Migrations
                 table: "Visitations",
                 column: "Patients_ID",
                 principalTable: "Patients",
-                principalColumn: "Id",
+                principalColumn: "ID",
                 onDelete: ReferentialAction.Cascade);
         }
 
@@ -127,7 +127,7 @@ namespace Labs_EF.Migrations
                 table: "Diagnoses",
                 column: "PatientsId",
                 principalTable: "Patients",
-                principalColumn: "Id",
+                principalColumn: "ID",
                 onDelete: ReferentialAction.Cascade);
 
             migrationBuilder.AddForeignKey(
@@ -135,7 +135,7 @@ namespace Labs_EF.Migrations
                 table: "Visitations",
                 column: "DoctorsId",
                 principalTable: "Doctors",
-                principalColumn: "Id",
+                principalColumn: "ID",
                 onDelete: ReferentialAction.Cascade);
 
             migrationBuilder.AddForeignKey(
@@ -143,7 +143,7 @@ namespace Labs_EF.Migrations
                 table: "Visitations",
                 column: "PatientsId",
                 principalTable: "Patients",
-                principalColumn: "Id",
+                principalColumn: "ID",
                 onDelete: ReferentialAction.Cascade);
         }
     }

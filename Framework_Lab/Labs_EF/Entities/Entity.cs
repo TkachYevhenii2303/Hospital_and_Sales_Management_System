@@ -4,8 +4,7 @@ namespace Labs_EF.Entities
 {
     public abstract class Entity
     {
-        [Key]
-        public Guid Id { get; set; }
+        public Guid ID { get; set; }
 
         public DateTime Created_at { get; set; }
 

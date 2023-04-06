@@ -27,7 +27,7 @@ namespace Labs_EF.Migrations
 
             modelBuilder.Entity("Labs_EF.Entities.Diagnoses", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier")
                         .HasDefaultValue(new Guid("d98973bf-9314-4c42-82b0-ad33f82d70de"));
@@ -53,7 +53,7 @@ namespace Labs_EF.Migrations
                         .HasColumnType("datetime2")
                         .HasDefaultValueSql("GetDate()");
 
-                    b.HasKey("Id");
+                    b.HasKey("ID");
 
                     b.HasIndex("Patiens_ID");
 
@@ -62,7 +62,7 @@ namespace Labs_EF.Migrations
 
             modelBuilder.Entity("Labs_EF.Entities.Doctors", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier")
                         .HasDefaultValue(new Guid("5a9c7cde-422d-4338-8a34-fd037783de66"));
@@ -84,14 +84,14 @@ namespace Labs_EF.Migrations
                         .HasColumnType("datetime2")
                         .HasDefaultValueSql("GetDate()");
 
-                    b.HasKey("Id");
+                    b.HasKey("ID");
 
                     b.ToTable("Doctors");
                 });
 
             modelBuilder.Entity("Labs_EF.Entities.Medicaments", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier")
                         .HasDefaultValue(new Guid("8d8d8521-d6d8-45e8-a790-b5c0237ad5f1"));
@@ -110,14 +110,14 @@ namespace Labs_EF.Migrations
                         .HasColumnType("datetime2")
                         .HasDefaultValueSql("GetDate()");
 
-                    b.HasKey("Id");
+                    b.HasKey("ID");
 
                     b.ToTable("Medicaments");
                 });
 
             modelBuilder.Entity("Labs_EF.Entities.Patients", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier")
                         .HasDefaultValue(new Guid("b3f1ec4b-211c-474c-b7bf-72f3c3545f9c"));
@@ -139,12 +139,12 @@ namespace Labs_EF.Migrations
                     b.Property<bool>("Has_Insuranse")
                         .HasColumnType("bit");
 
-                    b.Property<string>("Patients_first_name")
+                    b.Property<string>("Patients_Last")
                         .IsRequired()
                         .IsUnicode(true)
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Patients_last_name")
+                    b.Property<string>("Patients_First")
                         .IsRequired()
                         .IsUnicode(true)
                         .HasColumnType("nvarchar(max)");
@@ -154,14 +154,14 @@ namespace Labs_EF.Migrations
                         .HasColumnType("datetime2")
                         .HasDefaultValueSql("GetDate()");
 
-                    b.HasKey("Id");
+                    b.HasKey("ID");
 
                     b.ToTable("Patients");
                 });
 
             modelBuilder.Entity("Labs_EF.Entities.Visitations", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier")
                         .HasDefaultValue(new Guid("b689b58a-f86f-499f-9ef2-d12d655f0200"));
@@ -189,7 +189,7 @@ namespace Labs_EF.Migrations
                         .HasColumnType("datetime2")
                         .HasDefaultValueSql("GetDate()");
 
-                    b.HasKey("Id");
+                    b.HasKey("ID");
 
                     b.HasIndex("Doctors_ID");
 

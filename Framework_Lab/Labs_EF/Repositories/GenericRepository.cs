@@ -33,7 +33,7 @@ namespace Labs_EF.Repositories
         public async Task<ServicesResponse<TEntity>?> Get_information_ID(Guid ID)
         {
             var services_Response = new ServicesResponse<TEntity>();
-            var result = _context.Set<TEntity>().FirstOrDefault(x => x.Id == ID);
+            var result = _context.Set<TEntity>().FirstOrDefault(x => x.ID == ID);
 
             services_Response.Entity = result;
             return services_Response;

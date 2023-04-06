@@ -12,7 +12,7 @@ namespace Labs_EF.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AlterColumn<Guid>(
-                name: "Id",
+                name: "ID",
                 table: "Visitations",
                 type: "uniqueidentifier",
                 nullable: false,
@@ -22,7 +22,7 @@ namespace Labs_EF.Migrations
                 oldDefaultValueSql: "NewID()");
 
             migrationBuilder.AlterColumn<Guid>(
-                name: "Id",
+                name: "ID",
                 table: "Patients",
                 type: "uniqueidentifier",
                 nullable: false,
@@ -32,7 +32,7 @@ namespace Labs_EF.Migrations
                 oldDefaultValueSql: "NewID()");
 
             migrationBuilder.AlterColumn<Guid>(
-                name: "Id",
+                name: "ID",
                 table: "Medicaments",
                 type: "uniqueidentifier",
                 nullable: false,
@@ -42,7 +42,7 @@ namespace Labs_EF.Migrations
                 oldDefaultValueSql: "NewID()");
 
             migrationBuilder.AlterColumn<Guid>(
-                name: "Id",
+                name: "ID",
                 table: "Doctors",
                 type: "uniqueidentifier",
                 nullable: false,
@@ -52,7 +52,7 @@ namespace Labs_EF.Migrations
                 oldDefaultValueSql: "NewID()");
 
             migrationBuilder.AlterColumn<Guid>(
-                name: "Id",
+                name: "ID",
                 table: "Diagnoses",
                 type: "uniqueidentifier",
                 nullable: false,
@@ -66,7 +66,7 @@ namespace Labs_EF.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AlterColumn<Guid>(
-                name: "Id",
+                name: "ID",
                 table: "Visitations",
                 type: "uniqueidentifier",
                 nullable: false,
@@ -76,7 +76,7 @@ namespace Labs_EF.Migrations
                 oldDefaultValue: new Guid("b689b58a-f86f-499f-9ef2-d12d655f0200"));
 
             migrationBuilder.AlterColumn<Guid>(
-                name: "Id",
+                name: "ID",
                 table: "Patients",
                 type: "uniqueidentifier",
                 nullable: false,
@@ -86,7 +86,7 @@ namespace Labs_EF.Migrations
                 oldDefaultValue: new Guid("b3f1ec4b-211c-474c-b7bf-72f3c3545f9c"));
 
             migrationBuilder.AlterColumn<Guid>(
-                name: "Id",
+                name: "ID",
                 table: "Medicaments",
                 type: "uniqueidentifier",
                 nullable: false,
@@ -96,7 +96,7 @@ namespace Labs_EF.Migrations
                 oldDefaultValue: new Guid("8d8d8521-d6d8-45e8-a790-b5c0237ad5f1"));
 
             migrationBuilder.AlterColumn<Guid>(
-                name: "Id",
+                name: "ID",
                 table: "Doctors",
                 type: "uniqueidentifier",
                 nullable: false,
@@ -106,7 +106,7 @@ namespace Labs_EF.Migrations
                 oldDefaultValue: new Guid("5a9c7cde-422d-4338-8a34-fd037783de66"));
 
             migrationBuilder.AlterColumn<Guid>(
-                name: "Id",
+                name: "ID",
                 table: "Diagnoses",
                 type: "uniqueidentifier",
                 nullable: false,

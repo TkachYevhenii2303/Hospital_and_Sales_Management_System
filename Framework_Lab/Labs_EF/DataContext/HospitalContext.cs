@@ -28,7 +28,7 @@ namespace Labs_EF.DataContext
             foreach (var entity in modelBuilder.Model.GetEntityTypes()
                 .Where(result => typeof(Entity).IsAssignableFrom(result.ClrType)))
             {
-                modelBuilder.Entity(entity.Name).Property(nameof(Entity.Id))
+                modelBuilder.Entity(entity.Name).Property(nameof(Entity.ID))
                     .IsRequired().HasDefaultValueSql("NEWID()");
 
                 modelBuilder.Entity(entity.Name).Property(nameof(Entity.Created_at))
@@ -37,10 +37,6 @@ namespace Labs_EF.DataContext
                 modelBuilder.Entity(entity.Name).Property(nameof(Entity.Updated_at))
                     .IsRequired().HasDefaultValueSql("GetDate()");
             }
-
-            modelBuilder.ApplyConfiguration(new DoctorsConfigurations());
-            modelBuilder.ApplyConfiguration(new PatientsConfigurations());
-            modelBuilder.ApplyConfiguration(new PrescriptionConfigurations());
 
             // Generate Fake Data using Bogus
           /*  DataGenerator.Generate_all_Data();

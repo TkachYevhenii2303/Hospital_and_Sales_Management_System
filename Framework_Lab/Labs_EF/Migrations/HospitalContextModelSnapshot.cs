@@ -24,7 +24,7 @@ namespace Labs_EF.Migrations
 
             modelBuilder.Entity("Labs_EF.Entities.Diagnoses", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier")
                         .HasDefaultValueSql("NEWID()");
@@ -50,7 +50,7 @@ namespace Labs_EF.Migrations
                         .HasColumnType("datetime2")
                         .HasDefaultValueSql("GetDate()");
 
-                    b.HasKey("Id");
+                    b.HasKey("ID");
 
                     b.HasIndex("Patiens_ID");
 
@@ -511,7 +511,7 @@ namespace Labs_EF.Migrations
 
             modelBuilder.Entity("Labs_EF.Entities.Doctors", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier")
                         .HasDefaultValueSql("NEWID()");
@@ -533,7 +533,7 @@ namespace Labs_EF.Migrations
                         .HasColumnType("datetime2")
                         .HasDefaultValueSql("GetDate()");
 
-                    b.HasKey("Id");
+                    b.HasKey("ID");
 
                     b.ToTable("Doctors");
 
@@ -742,7 +742,7 @@ namespace Labs_EF.Migrations
 
             modelBuilder.Entity("Labs_EF.Entities.Medicaments", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier")
                         .HasDefaultValueSql("NEWID()");
@@ -761,7 +761,7 @@ namespace Labs_EF.Migrations
                         .HasColumnType("datetime2")
                         .HasDefaultValueSql("GetDate()");
 
-                    b.HasKey("Id");
+                    b.HasKey("ID");
 
                     b.ToTable("Medicaments");
 
@@ -1295,7 +1295,7 @@ namespace Labs_EF.Migrations
 
             modelBuilder.Entity("Labs_EF.Entities.Patients", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier")
                         .HasDefaultValueSql("NEWID()");
@@ -1317,12 +1317,12 @@ namespace Labs_EF.Migrations
                     b.Property<bool>("Has_Insuranse")
                         .HasColumnType("bit");
 
-                    b.Property<string>("Patients_first_name")
+                    b.Property<string>("Patients_Last")
                         .IsRequired()
                         .IsUnicode(true)
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Patients_last_name")
+                    b.Property<string>("Patients_First")
                         .IsRequired()
                         .IsUnicode(true)
                         .HasColumnType("nvarchar(max)");
@@ -1332,7 +1332,7 @@ namespace Labs_EF.Migrations
                         .HasColumnType("datetime2")
                         .HasDefaultValueSql("GetDate()");
 
-                    b.HasKey("Id");
+                    b.HasKey("ID");
 
                     b.ToTable("Patients");
 
@@ -3541,7 +3541,7 @@ namespace Labs_EF.Migrations
 
             modelBuilder.Entity("Labs_EF.Entities.Prescription", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier")
                         .HasDefaultValueSql("NEWID()");
@@ -3562,7 +3562,7 @@ namespace Labs_EF.Migrations
                         .HasColumnType("datetime2")
                         .HasDefaultValueSql("GetDate()");
 
-                    b.HasKey("Id");
+                    b.HasKey("ID");
 
                     b.HasIndex("Medicaments_ID");
 
@@ -4375,7 +4375,7 @@ namespace Labs_EF.Migrations
 
             modelBuilder.Entity("Labs_EF.Entities.Visitations", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier")
                         .HasDefaultValueSql("NEWID()");
@@ -4403,7 +4403,7 @@ namespace Labs_EF.Migrations
                         .HasColumnType("datetime2")
                         .HasDefaultValueSql("GetDate()");
 
-                    b.HasKey("Id");
+                    b.HasKey("ID");
 
                     b.HasIndex("Doctors_ID");
 
@@ -5035,7 +5035,7 @@ namespace Labs_EF.Migrations
                         new
                         {
                             Id = new Guid("30651f95-5bb5-4cab-b512-fee136ac283b"),
-                            Comments = "Id voluptatum et at nulla nihil.",
+                            Comments = "ID voluptatum et at nulla nihil.",
                             Created_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Date = new DateTime(2023, 11, 17, 20, 47, 26, 414, DateTimeKind.Local).AddTicks(9440),
                             Doctors_ID = new Guid("ef1d71f8-6192-495f-a0c3-0630a883ebb8"),
@@ -5105,7 +5105,7 @@ namespace Labs_EF.Migrations
                         new
                         {
                             Id = new Guid("e5c66731-6373-4cd1-a2d8-cfced5e7038e"),
-                            Comments = "Id repellendus ab suscipit pariatur laboriosam voluptatibus.",
+                            Comments = "ID repellendus ab suscipit pariatur laboriosam voluptatibus.",
                             Created_at = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Date = new DateTime(2023, 11, 27, 6, 10, 14, 26, DateTimeKind.Local).AddTicks(1440),
                             Doctors_ID = new Guid("d2c311bf-aa15-45cb-916f-8b0341c48099"),

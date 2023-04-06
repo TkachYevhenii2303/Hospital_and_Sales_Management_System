@@ -42,7 +42,7 @@ namespace Labs_EF.Migrations
                 table: "Visitations",
                 column: "DoctorsId",
                 principalTable: "Doctors",
-                principalColumn: "Id");
+                principalColumn: "ID");
         }
 
         /// <inheritdoc />

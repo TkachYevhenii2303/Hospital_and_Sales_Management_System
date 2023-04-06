@@ -61,7 +61,7 @@ namespace Labs_EF.Migrations
                         name: "FK_Diagnoses_Patients_PatientsId",
                         column: x => x.PatientsId,
                         principalTable: "Patients",
-                        principalColumn: "Id",
+                        principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -79,13 +79,13 @@ namespace Labs_EF.Migrations
                         name: "FK_Prescriptions_Medicaments_MedicamentsId",
                         column: x => x.MedicamentsId,
                         principalTable: "Medicaments",
-                        principalColumn: "Id",
+                        principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Prescriptions_Patients_PatientsId",
                         column: x => x.PatientsId,
                         principalTable: "Patients",
-                        principalColumn: "Id",
+                        principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -107,7 +107,7 @@ namespace Labs_EF.Migrations
                         name: "FK_Visitations_Patients_PatientsId",
                         column: x => x.PatientsId,
                         principalTable: "Patients",
-                        principalColumn: "Id",
+                        principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
                 });
 
