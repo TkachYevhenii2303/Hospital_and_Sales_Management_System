@@ -5,19 +5,23 @@ namespace Labs_EF.Generator
 {
     public static class DataGenerator
     {
-        public static List<Visitations> Visitations { get; set; }
-        public static List<Patients> Patients { get; set; }
-        public static List<Doctors> Doctors { get; set; }
-        public static List<Medicaments> Medicaments { get; set; }   
-        public static List<Diagnoses> Diagnoses { get; set; }
-        public static List<Prescription> Prescriptions { get; set; }
+        #region The all Lists for all Entities
+        public static List<Visitations> Visitations { get; set; } = new();
+        public static List<Patients> Patients { get; set; } = new();
+        public static List<Doctors> Doctors { get; set; } = new();
+        public static List<Medicaments> Medicaments { get; set; } = new();
+        public static List<Diagnoses> Diagnoses { get; set; } = new();
+        public static List<Prescription> Prescriptions { get; set; } = new();
+        #endregion
 
+        #region Const ints with base size for Generate_all_Data()
         private const int VISITATIONS = 150;
         private const int DOCTORS = 25;
         private const int PATIENTS = 200;
         private const int DIAGNOSES = 50;
         private const int MEDICAMENTS = 75;
         private const int PRESCRIPTIONS = 100;
+        #endregion
 
         public static void Generate_all_Data()
         {
@@ -28,9 +32,9 @@ namespace Labs_EF.Generator
 
             Patients = new Faker<Patients>()
                 .RuleFor(p => p.ID, _ => Guid.NewGuid())
-                .RuleFor(p => p.Patients_Last, f => f.Name.FirstName())
-                .RuleFor(p => p.Patients_First, f => f.Name.LastName())
-                .RuleFor(p => p.Email, (f, p) => f.Internet.Email(p.Patients_Last, p.Patients_First))
+                .RuleFor(p => p.Patients_first_name, f => f.Name.FirstName())
+                .RuleFor(p => p.Patients_last_name, f => f.Name.LastName())
+                .RuleFor(p => p.Email, (f, p) => f.Internet.Email(p.Patients_first_name, p.Patients_last_name))
                 .RuleFor(p => p.Address, f => $"The address: {f.Address.FullAddress()}")
                 .RuleFor(p => p.Has_Insuranse, f => f.Random.Bool()).Generate(PATIENTS);
 

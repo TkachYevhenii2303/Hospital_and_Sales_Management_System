@@ -11,15 +11,9 @@ namespace Labs_EF.Repositories
         {
             _context = context;
             this.Doctros_Repository = new DoctorsRepository(_context);
-            this.Patients_Repository = new PatientsRepository(_context);
-            this.Visitations_Repository = new VisitationsRepository(_context);
         }
 
         public IDoctrosRepository Doctros_Repository { get; private set; }
-
-        public IPatientsRepository Patients_Repository { get; private set; }
-
-        public IVisitationsRepository Visitations_Repository { get; private set; }
 
         public int Complete() => _context.SaveChanges();
 

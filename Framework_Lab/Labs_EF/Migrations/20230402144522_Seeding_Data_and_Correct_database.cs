@@ -4557,7 +4557,7 @@ namespace Labs_EF.Migrations
 
             migrationBuilder.InsertData(
                 table: "Patients",
-                columns: new[] { "ID", "Address", "Email", "Has_Insuranse", "Patients_Last", "Patients_First" },
+                columns: new[] { "ID", "Address", "Email", "Has_Insuranse", "Patients_first_name", "Patients_last_name" },
                 values: new object[,]
                 {
                     { new Guid("012256e2-4acc-471d-a225-d2917ba9a8c7"), "The address: 7558 Schroeder Hill, South Omerchester, Wallis and Futuna", "Jarred_Schiller@gmail.com", true, "Jarred", "Schiller" },
@@ -8290,7 +8290,7 @@ namespace Labs_EF.Migrations
 
             migrationBuilder.InsertData(
                 table: "Patients",
-                columns: new[] { "ID", "Address", "Email", "Has_Insuranse", "Patients_Last", "Patients_First" },
+                columns: new[] { "ID", "Address", "Email", "Has_Insuranse", "Patients_first_name", "Patients_last_name" },
                 values: new object[,]
                 {
                     { new Guid("00320e68-c2bd-4d4c-8ac7-cbbfa9d649cf"), "The address: System.Func`1[System.String]", "Kiera_Daugherty@hotmail.com", true, "Kiera", "Daugherty" },

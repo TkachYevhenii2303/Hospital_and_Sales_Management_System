@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Labs_EF.Migrations
 {
     [DbContext(typeof(HospitalContext))]
-    [Migration("20230401131901_Doctors_table")]
-    partial class Doctors_table
+    [Migration("20230406130452_refactoring_code")]
+    partial class refactoring_code
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -30,7 +30,7 @@ namespace Labs_EF.Migrations
                     b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier")
-                        .HasDefaultValueSql("NewID()");
+                        .HasDefaultValueSql("NEWID()");
 
                     b.Property<string>("Comments")
                         .IsRequired()
@@ -45,7 +45,7 @@ namespace Labs_EF.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid>("PatientsId")
+                    b.Property<Guid>("Patiens_ID")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("Updated_at")
@@ -55,7 +55,7 @@ namespace Labs_EF.Migrations
 
                     b.HasKey("ID");
 
-                    b.HasIndex("PatientsId");
+                    b.HasIndex("Patiens_ID");
 
                     b.ToTable("Diagnoses");
                 });
@@ -65,7 +65,7 @@ namespace Labs_EF.Migrations
                     b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier")
-                        .HasDefaultValueSql("NewID()");
+                        .HasDefaultValueSql("NEWID()");
 
                     b.Property<DateTime>("Created_at")
                         .ValueGeneratedOnAdd()
@@ -74,11 +74,11 @@ namespace Labs_EF.Migrations
 
                     b.Property<string>("Doctors_name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("Specialty")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Specialty")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("Updated_at")
                         .ValueGeneratedOnAdd()
@@ -95,7 +95,7 @@ namespace Labs_EF.Migrations
                     b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier")
-                        .HasDefaultValueSql("NewID()");
+                        .HasDefaultValueSql("NEWID()");
 
                     b.Property<DateTime>("Created_at")
                         .ValueGeneratedOnAdd()
@@ -104,7 +104,8 @@ namespace Labs_EF.Migrations
 
                     b.Property<string>("Medicaments_title")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<DateTime>("Updated_at")
                         .ValueGeneratedOnAdd()
@@ -121,12 +122,13 @@ namespace Labs_EF.Migrations
                     b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier")
-                        .HasDefaultValueSql("NewID()");
+                        .HasDefaultValueSql("NEWID()");
 
                     b.Property<string>("Address")
                         .IsRequired()
+                        .HasMaxLength(100)
                         .IsUnicode(true)
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<DateTime>("Created_at")
                         .ValueGeneratedOnAdd()
@@ -140,15 +142,17 @@ namespace Labs_EF.Migrations
                     b.Property<bool>("Has_Insuranse")
                         .HasColumnType("bit");
 
-                    b.Property<string>("Patients_first_name")
-                        .IsRequired()
-                        .IsUnicode(true)
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Patients_last_name")
                         .IsRequired()
+                        .HasMaxLength(100)
                         .IsUnicode(true)
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("Patients_first_name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .IsUnicode(true)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<DateTime>("Updated_at")
                         .ValueGeneratedOnAdd()
@@ -160,29 +164,22 @@ namespace Labs_EF.Migrations
                     b.ToTable("Patients");
                 });
 
-            modelBuilder.Entity("Labs_EF.Entities.Visitations", b =>
+            modelBuilder.Entity("Labs_EF.Entities.Prescription", b =>
                 {
                     b.Property<Guid>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier")
-                        .HasDefaultValueSql("NewID()");
-
-                    b.Property<string>("Comments")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasDefaultValueSql("NEWID()");
 
                     b.Property<DateTime>("Created_at")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
                         .HasDefaultValueSql("GetDate()");
 
-                    b.Property<DateTime>("Date")
-                        .HasColumnType("datetime2");
-
-                    b.Property<Guid?>("DoctorsId")
+                    b.Property<Guid>("Medicaments_ID")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("PatientsId")
+                    b.Property<Guid>("Patients_ID")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("Updated_at")
@@ -192,67 +189,100 @@ namespace Labs_EF.Migrations
 
                     b.HasKey("ID");
 
-                    b.HasIndex("DoctorsId");
+                    b.HasIndex("Medicaments_ID");
 
-                    b.HasIndex("PatientsId");
+                    b.HasIndex("Patients_ID");
 
-                    b.ToTable("Visitations");
+                    b.ToTable("Prescription_Medicaments");
                 });
 
-            modelBuilder.Entity("MedicamentsPatients", b =>
+            modelBuilder.Entity("Labs_EF.Entities.Visitations", b =>
                 {
-                    b.Property<Guid>("MedicamentsId")
+                    b.Property<Guid>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier")
+                        .HasDefaultValueSql("NEWID()");
+
+                    b.Property<string>("Comments")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<DateTime>("Created_at")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GetDate()");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("Doctors_ID")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("PatientsId")
+                    b.Property<Guid>("Patients_ID")
                         .HasColumnType("uniqueidentifier");
 
-                    b.HasKey("MedicamentsId", "PatientsId");
+                    b.Property<DateTime>("Updated_at")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GetDate()");
 
-                    b.HasIndex("PatientsId");
+                    b.HasKey("ID");
 
-                    b.ToTable("Prescriptions", (string)null);
+                    b.HasIndex("Doctors_ID");
+
+                    b.HasIndex("Patients_ID");
+
+                    b.ToTable("Visitations");
                 });
 
             modelBuilder.Entity("Labs_EF.Entities.Diagnoses", b =>
                 {
                     b.HasOne("Labs_EF.Entities.Patients", "Patients")
                         .WithMany("Diagnoses")
-                        .HasForeignKey("PatientsId")
+                        .HasForeignKey("Patiens_ID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Patients");
+                });
+
+            modelBuilder.Entity("Labs_EF.Entities.Prescription", b =>
+                {
+                    b.HasOne("Labs_EF.Entities.Medicaments", "Medicaments")
+                        .WithMany("Prescriptions")
+                        .HasForeignKey("Medicaments_ID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Labs_EF.Entities.Patients", "Patients")
+                        .WithMany("Prescriptions")
+                        .HasForeignKey("Patients_ID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Medicaments");
 
                     b.Navigation("Patients");
                 });
 
             modelBuilder.Entity("Labs_EF.Entities.Visitations", b =>
                 {
-                    b.HasOne("Labs_EF.Entities.Doctors", null)
+                    b.HasOne("Labs_EF.Entities.Doctors", "Doctors")
                         .WithMany("Visitations")
-                        .HasForeignKey("DoctorsId");
+                        .HasForeignKey("Doctors_ID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("Labs_EF.Entities.Patients", "Patients")
                         .WithMany("Visitations")
-                        .HasForeignKey("PatientsId")
+                        .HasForeignKey("Patients_ID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Doctors");
 
                     b.Navigation("Patients");
-                });
-
-            modelBuilder.Entity("MedicamentsPatients", b =>
-                {
-                    b.HasOne("Labs_EF.Entities.Medicaments", null)
-                        .WithMany()
-                        .HasForeignKey("MedicamentsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Labs_EF.Entities.Patients", null)
-                        .WithMany()
-                        .HasForeignKey("PatientsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
                 });
 
             modelBuilder.Entity("Labs_EF.Entities.Doctors", b =>
@@ -260,9 +290,16 @@ namespace Labs_EF.Migrations
                     b.Navigation("Visitations");
                 });
 
+            modelBuilder.Entity("Labs_EF.Entities.Medicaments", b =>
+                {
+                    b.Navigation("Prescriptions");
+                });
+
             modelBuilder.Entity("Labs_EF.Entities.Patients", b =>
                 {
                     b.Navigation("Diagnoses");
+
+                    b.Navigation("Prescriptions");
 
                     b.Navigation("Visitations");
                 });

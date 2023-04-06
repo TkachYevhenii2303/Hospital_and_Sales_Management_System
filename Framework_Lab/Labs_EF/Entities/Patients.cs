@@ -15,12 +15,12 @@ namespace Labs_EF.Entities
         [Required(ErrorMessage = "The field is required!")]
         [StringLength(100, ErrorMessage = "The legnt of this field must be less than 100 characters!")]
         [Unicode]
-        public string Patients_Last { get; set; } = String.Empty;
+        public string Patients_first_name { get; set; } = String.Empty;
 
         [Required(ErrorMessage = "The field is required!")]
         [StringLength(100, ErrorMessage = "The legnt of this field must be less than 100 characters!")]
         [Unicode]
-        public string Patients_First { get; set; } = String.Empty;
+        public string Patients_last_name { get; set; } = String.Empty;
 
         [EmailAddress]
         public string Email { get; set; } = String.Empty;

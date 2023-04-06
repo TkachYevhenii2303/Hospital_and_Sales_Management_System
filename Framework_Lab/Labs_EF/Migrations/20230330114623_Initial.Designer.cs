@@ -110,12 +110,12 @@ namespace Labs_EF.Migrations
                     b.Property<bool>("Has_Insuranse")
                         .HasColumnType("bit");
 
-                    b.Property<string>("Patients_Last")
+                    b.Property<string>("Patients_first_name")
                         .IsRequired()
                         .IsUnicode(true)
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Patients_First")
+                    b.Property<string>("Patients_last_name")
                         .IsRequired()
                         .IsUnicode(true)
                         .HasColumnType("nvarchar(max)");

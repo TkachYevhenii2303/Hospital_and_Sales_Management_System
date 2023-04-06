@@ -22,9 +22,7 @@ builder.Services.AddDbContext<HospitalContext>(options =>
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services
     .AddScoped<IUnit_of_Work, Unit_of_Work>()
-    .AddScoped<IDoctrosRepository, DoctorsRepository>()
-    .AddScoped<IPatientsRepository, PatientsRepository>()
-    .AddScoped<IVisitationsRepository, VisitationsRepository>();
+    .AddScoped<IDoctrosRepository, DoctorsRepository>();
 
 var app = builder.Build();
 
