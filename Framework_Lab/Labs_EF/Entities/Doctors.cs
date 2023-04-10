@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace Labs_EF.Entities
 {
@@ -13,6 +14,6 @@ namespace Labs_EF.Entities
         [Required(ErrorMessage = "The field is required!")]
         public Specialty Specialty { get; set; }
 
-        public ICollection<Visitations> Visitations { get; set; } = null!;
+        public virtual ICollection<Visitations> Visitations { get; set; } = null!;
     }
 }

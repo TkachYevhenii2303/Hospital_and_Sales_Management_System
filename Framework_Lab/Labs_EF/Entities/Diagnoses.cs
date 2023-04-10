@@ -15,6 +15,6 @@ namespace Labs_EF.Entities
         [ForeignKey(nameof(Patients))]
         public Guid Patiens_ID { get; set; }
 
-        public Patients Patients { get; set; } = null!;
+        public virtual Patients Patients { get; set; } = null!;
     }
 }

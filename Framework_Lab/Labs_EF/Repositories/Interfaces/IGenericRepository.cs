@@ -1,5 +1,4 @@
 ﻿using Labs_EF.Entities;
-using Labs_EF.Specifications.Interfaces;
 using System.Collections;
 
 namespace Labs_EF.Repositories.Interfaces
@@ -10,6 +9,6 @@ namespace Labs_EF.Repositories.Interfaces
 
         public Task<ServicesResponse<TEntity>?> Get_information_ID(Guid ID);
 
-        public IEnumerable<TEntity> Find_with_Specification_Pattern(ISpecifications<TEntity> specifications = null);
+        public Task<ServicesResponse<IEnumerable<TEntity>>> Insert_Entity(TEntity entity);
     }
 }

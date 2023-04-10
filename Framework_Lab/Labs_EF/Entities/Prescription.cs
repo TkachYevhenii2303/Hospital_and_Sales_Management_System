@@ -13,6 +13,6 @@ namespace Labs_EF.Entities
         [ForeignKey(nameof(Medicaments))]
         public Guid Medicaments_ID { get; set; }    
 
-        public Medicaments Medicaments { get; set; } = null!;
+        public virtual Medicaments Medicaments { get; set; } = null!;
     }
 }

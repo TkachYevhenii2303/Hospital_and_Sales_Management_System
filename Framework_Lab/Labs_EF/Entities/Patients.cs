@@ -27,10 +27,10 @@ namespace Labs_EF.Entities
 
         public bool Has_Insuranse { get; set; } = false;
 
-        public ICollection<Diagnoses> Diagnoses { get; set; } = null!;
+        public virtual ICollection<Diagnoses> Diagnoses { get; set; } = null!;
 
-        public ICollection<Visitations> Visitations { get; set; } = null!;
+        public virtual ICollection<Visitations> Visitations { get; set; } = null!;
 
-        public ICollection<Prescription> Prescriptions { get; set; } = null!;
+        public virtual ICollection<Prescription> Prescriptions { get; set; } = null!;
     }
 }

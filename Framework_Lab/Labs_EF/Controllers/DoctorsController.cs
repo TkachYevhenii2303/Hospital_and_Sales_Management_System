@@ -15,7 +15,7 @@ namespace Labs_EF.Controllers
             _Unit_of_Work = unit_of_Work;
         }
 
-        [HttpGet("GET_all_Information")]
+        [HttpGet("Ger_all_Employees")]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<ServicesResponse<Doctors>>>> Get_all_Information()
@@ -23,6 +23,40 @@ namespace Labs_EF.Controllers
             try
             {
                 var result = await _Unit_of_Work.Doctros_Repository.Get_all_Information();
+                _Unit_of_Work.Complete();
+                return Ok(result);
+            }
+            catch (Exception exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, exception.Message);
+            }
+        }
+
+        [HttpGet("Get_concrete_Employee")]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public async Task<ActionResult<IEnumerable<ServicesResponse<Doctors>>>> Get_Employee_ID(Guid ID)
+        {
+            try
+            {
+                var result = await _Unit_of_Work.Doctros_Repository.Get_information_ID(ID);
+                _Unit_of_Work.Complete();
+                return Ok(result);
+            }
+            catch (Exception exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, exception.Message);
+            }
+        }
+
+        [HttpPost("Post_Employee_to_List")]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public async Task<ActionResult<IEnumerable<ServicesResponse<Doctors>>>> Post_Employee(Doctors doctors)
+        {
+            try
+            {
+                var result = await _Unit_of_Work.Doctros_Repository.Insert_Entity(doctors);
                 _Unit_of_Work.Complete();
                 return Ok(result);
             }
