@@ -1,8 +1,13 @@
+using Hospital_System.Data_transfer_objects.Services_Interfaces;
+using Hospital_System.Data_transfer_objects.Services_Interfaces.Interfaces;
+using Hospital_System_Blazor.Services;
+using Hospital_System_Blazor.Services.Interfaces;
 using Labs_EF.DataContext;
 using Labs_EF.Generator;
 using Labs_EF.Repositories;
 using Labs_EF.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,27 +16,53 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(configuration =>
+{
+    configuration.SwaggerDoc("v1", new OpenApiInfo 
+    { 
+        Title = "Hospital System", 
+        Version = "v1" ,
+        Description = "API for working with the hospital system."
+    });
+});
 
 builder.Services.AddDbContext<HospitalContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnections"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnections"), b => b.MigrationsAssembly("Hospital_System"));
 });
+
+builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
 // Dependency Injections 
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services
     .AddScoped<IUnit_of_Work, Unit_of_Work>()
-    .AddScoped<IDoctrosRepository, DoctorsRepository>();
+    .AddScoped<IDoctrosRepository, DoctorsRepository>()
+    .AddScoped<IDoctorsServices, DoctorsServices>();
+
+// Blazor Dependency
+builder.Services.AddSingleton<EmployeeServices>();
+builder.Services.AddHttpClient<IEmployeeServices, EmployeeServices>(configuration =>
+{
+    configuration.BaseAddress = new Uri("https://localhost:7170/");
+});
 
 var app = builder.Build();
+
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(configuration =>
+    {
+        configuration.SwaggerEndpoint("/swagger/v1/swagger.json", "Hospital System");
+        configuration.RoutePrefix = string.Empty;
+    });
 }
+
+app.UseCors("AllowBlazorOrigin");
 
 app.UseHttpsRedirection();
 
@@ -40,3 +71,4 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
