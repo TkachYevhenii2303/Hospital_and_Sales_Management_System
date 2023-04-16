@@ -1054,3 +1054,7 @@ D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\
 D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Hospital_System_Blazor\obj\Debug\net7.0\refint\Hospital_System_Blazor.dll
 D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Hospital_System_Blazor\obj\Debug\net7.0\Hospital_System_Blazor.pdb
 D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Hospital_System_Blazor\obj\Debug\net7.0\ref\Hospital_System_Blazor.dll
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Hospital_System_Blazor\bin\Debug\net7.0\wwwroot\_framework\Microsoft.Extensions.Logging.Debug.dll
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Hospital_System_Blazor\bin\Debug\net7.0\wwwroot\_framework\Microsoft.Extensions.Logging.Debug.dll.gz
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Hospital_System_Blazor\bin\Debug\net7.0\Microsoft.Extensions.Logging.Debug.dll
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Hospital_System_Blazor\obj\Debug\net7.0\build-gz\30m90jyT.gz

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Nscr6bS1ZReuoMnz3RRRIBUpkZo0q94pmZ8t1uaV4c0=",
+  "Hash": "lY2UXnTazkYmnzioD796SgdhgcLCVc14TBrJYlGVBgo=",
   "Source": "Hospital_System_Blazor",
   "BasePath": "/",
   "Mode": "Root",
@@ -1086,6 +1086,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\lib\\net7.0\\Microsoft.Extensions.Logging.Abstractions.dll"
+    },
+    {
+      "Identity": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Hospital_System_Blazor\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Debug.dll",
+      "SourceId": "Hospital_System_Blazor",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Hospital_System_Blazor\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Logging.Debug.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.logging.debug\\7.0.0\\lib\\net7.0\\Microsoft.Extensions.Logging.Debug.dll"
     },
     {
       "Identity": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Hospital_System_Blazor\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.dll",
@@ -4707,6 +4724,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Hospital_System_Blazor\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Console.dll"
+    },
+    {
+      "Identity": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Hospital_System_Blazor\\obj\\Debug\\net7.0\\build-gz\\30m90jyT.gz",
+      "SourceId": "Hospital_System_Blazor",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Hospital_System_Blazor\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Logging.Debug.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Hospital_System_Blazor\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Debug.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Hospital_System_Blazor\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Debug.dll"
     },
     {
       "Identity": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Hospital_System_Blazor\\obj\\Debug\\net7.0\\build-gz\\3katqJxZ.gz",

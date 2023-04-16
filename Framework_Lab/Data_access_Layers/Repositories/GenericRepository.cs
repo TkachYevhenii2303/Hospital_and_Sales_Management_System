@@ -1,4 +1,6 @@
-﻿using Labs_EF.DataContext;
+﻿using Data_access_Layers.Specifications;
+using Data_access_Layers.Specifications.Interfaces;
+using Labs_EF.DataContext;
 using Labs_EF.Entities;
 using Labs_EF.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
@@ -64,6 +66,16 @@ namespace Labs_EF.Repositories
             {
                 throw new Exception($"Something went wrong...", exception);
             }
+        }
+
+        public IEnumerable<TEntity> Find_with_Specifications_Pattern(ISpecifications<TEntity> specifications)
+        {
+            return Apply_Specifications(specifications);
+        }
+
+        private IQueryable<TEntity> Apply_Specifications(ISpecifications<TEntity> specifications)
+        {
+            return Specifications_Evaluator<TEntity>.Get_all_Information(_context.Set<TEntity>().AsQueryable(), specifications);
         }
     }
 }

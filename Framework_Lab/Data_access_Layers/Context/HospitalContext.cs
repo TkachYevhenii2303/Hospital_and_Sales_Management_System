@@ -3,12 +3,18 @@ using Labs_EF.Generator;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Debug;
+using System.Threading.Channels;
 
 namespace Labs_EF.DataContext
 {
     public class HospitalContext : IdentityDbContext<IdentityUser>
     {
-        public HospitalContext(DbContextOptions<HospitalContext> options) : base (options) { }
+        public HospitalContext(DbContextOptions<HospitalContext> options, ILoggerFactory logger) : base(options)
+        {
+            this.logger = logger;
+        }
 
         public virtual DbSet<Diagnoses> Diagnoses { get; set; }
 
@@ -21,6 +27,13 @@ namespace Labs_EF.DataContext
         public virtual DbSet<Doctors> Doctors { get; set; }
 
         public virtual DbSet<Prescription> Prescriptions { get; set; }
+
+        private readonly ILoggerFactory logger;
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseLoggerFactory(this.logger);   
+        }
 
         #region Set the base configuration for the classes
         // Method for set base configureation for all models in database

@@ -13,5 +13,9 @@ namespace Hospital_System.Data_transfer_objects.Services_Interfaces.Interfaces
         public Task<IEnumerable<Get_Doctors_Result_DTO>> Update_Doctrors(Update_Doctors_Result_DTO doctors);
 
         public Task<IEnumerable<Get_Doctors_Result_DTO>> Delete_Doctrors(Guid ID);
+
+        public IEnumerable<Get_Doctors_Result_DTO> Find_Doctors_Speciality(string speciality);
+
+        public Task<IEnumerable<string>> Get_all_Specialities();
     }
 }

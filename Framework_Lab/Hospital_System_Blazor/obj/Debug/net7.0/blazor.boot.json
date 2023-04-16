@@ -57,6 +57,7 @@
       "Microsoft.Extensions.Identity.Stores.dll": "sha256-Wu4Kqcn8jkoVBOVLZ9kFnMahAZecIjgmmzyHjAHBjzk=",
       "Microsoft.Extensions.Logging.dll": "sha256-WMsuY8rhtg+vvssGFSR7ZLKhqYPAzOi538IXMoiJ6bI=",
       "Microsoft.Extensions.Logging.Abstractions.dll": "sha256-7zoKnNaWqWOrjF2eX3dFetJL+I03xqvCzORtFB4Ws08=",
+      "Microsoft.Extensions.Logging.Debug.dll": "sha256-hoaLdDFu4lFqttRgjVM6lkpLRzXw4ZBWu0HDoWlmn\/8=",
       "Microsoft.Extensions.ObjectPool.dll": "sha256-UCVqOmu+z9\/M5Wahsgr7zKRWdGQWNvXGWLlEa1gkFuw=",
       "Microsoft.Extensions.Options.dll": "sha256-rYT8laJlOlF0qyGuqjSmgDWb3Mk5aO1P2d9ojmaAuL0=",
       "Microsoft.Extensions.Primitives.dll": "sha256-q4ruoDSCjV\/QJY9ZkzV6uxvEvZUVrDbyUjU3SSh5SlE=",
@@ -253,15 +254,15 @@
       "mscorlib.dll": "sha256-qqpKd+W+AFb6UxudEYEKzrz7ma81p5LrWUwPBVvHV4U=",
       "netstandard.dll": "sha256-OYYuPT3JUknj4LdYIa58zF7kDB3tCnLzjCSuhEjtKXM=",
       "System.Private.CoreLib.dll": "sha256-EVS7zPxPV\/41g2mzPwdXtwiigWxI\/SeAHme1IgyD6tc=",
-      "Data_access_Layers.dll": "sha256-QrLAXDOE5YcbuHSDK7MajvZZoQ6J+nyr2ju4Atv8JhY=",
-      "Hospital_System_Blazor.dll": "sha256-N8bTfQoOzWPqFYjqT3RJcODSad8t15Vek\/kTqrqX1vc="
+      "Data_access_Layers.dll": "sha256-IWzcoRnR9KzGDl+SOOWAr4dDU67zYESUN8fh1XFJwzI=",
+      "Hospital_System_Blazor.dll": "sha256-8lK0lHlr9lGYB\/fDJ\/o3zPDavLXG4C1PswtWACik8uo="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "Data_access_Layers.pdb": "sha256-9YovyAzY1iXRRMCj2UckNGryw4R2770lSEdfPainUCA=",
-      "Hospital_System_Blazor.pdb": "sha256-dAdmqvsvU8LLPjF4dxOE9FuxoehbBNj0Jd8XTv29ZK4="
+      "Data_access_Layers.pdb": "sha256-gykpsUZ1Wp4DYbEZPZGdAG1ruXIygUbl8J2GgVD8beE=",
+      "Hospital_System_Blazor.pdb": "sha256-kfa+RGoWm66nJtlsbr4TWFAiUgtmEhXJ17sUFhK6RJg="
     },
     "runtime": {
       "dotnet.7.0.5.dlbbvxq6go.js": "sha256-codB25EodaFEP43MDCfMBuKXU4LqurUKnQrpoMIFnPs=",
