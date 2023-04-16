@@ -1,0 +1,14 @@
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Data_access_Layers\bin\Debug\net7.0\Data_access_Layers.deps.json
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Data_access_Layers\bin\Debug\net7.0\Data_access_Layers.runtimeconfig.json
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Data_access_Layers\bin\Debug\net7.0\Data_access_Layers.dll
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Data_access_Layers\bin\Debug\net7.0\Data_access_Layers.pdb
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Data_access_Layers\obj\Debug\net7.0\Data_access_Layers.csproj.AssemblyReference.cache
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Data_access_Layers\obj\Debug\net7.0\Data_access_Layers.GeneratedMSBuildEditorConfig.editorconfig
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Data_access_Layers\obj\Debug\net7.0\Data_access_Layers.AssemblyInfoInputs.cache
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Data_access_Layers\obj\Debug\net7.0\Data_access_Layers.AssemblyInfo.cs
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Data_access_Layers\obj\Debug\net7.0\Data_access_Layers.csproj.CoreCompileInputs.cache
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Data_access_Layers\obj\Debug\net7.0\Data_access_Layers.dll
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Data_access_Layers\obj\Debug\net7.0\refint\Data_access_Layers.dll
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Data_access_Layers\obj\Debug\net7.0\Data_access_Layers.pdb
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Data_access_Layers\obj\Debug\net7.0\Data_access_Layers.genruntimeconfig.cache
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Data_access_Layers\obj\Debug\net7.0\ref\Data_access_Layers.dll

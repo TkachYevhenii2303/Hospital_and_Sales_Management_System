@@ -28,6 +28,8 @@ namespace Labs_EF.Generator
             Doctors = new Faker<Doctors>()
                 .RuleFor(p => p.ID, _ => Guid.NewGuid())
                 .RuleFor(d => d.Doctors_name, f => f.Name.FullName())
+                .RuleFor(d => d.Email, (f, o) => f.Internet.Email(o.Doctors_name))
+                .RuleFor(d => d.Password_hash, f => f.Internet.Password(10))
                 .RuleFor(d => d.Specialty, f => f.PickRandom<Specialty>()).Generate(DOCTORS);
 
             Patients = new Faker<Patients>()

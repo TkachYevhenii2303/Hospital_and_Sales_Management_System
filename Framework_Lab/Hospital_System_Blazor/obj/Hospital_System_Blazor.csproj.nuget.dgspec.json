@@ -18,15 +18,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -37,8 +37,8 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
@@ -105,15 +105,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {
               "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Data_access_Layers\\Data_access_Layers.csproj": {
                 "projectPath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Data_access_Layers\\Data_access_Layers.csproj"
@@ -128,8 +128,8 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
@@ -159,7 +159,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[6.0.16, 6.0.16]"
+              "version": "[7.0.5, 7.0.5]"
             }
           ],
           "frameworkReferences": {

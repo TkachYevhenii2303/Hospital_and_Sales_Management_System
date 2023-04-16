@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BJMkFebmFfeWtsI8Z7j8sGGnGHTaUOu3w72amCDP4DQG5mI4++o1627zyL3Vyr69GGbZg+9pOzXMvw7vUZW6RQ==",
+  "dgSpecHash": "PBdZVPiVrHIM2DwYxtYry/ymduQC00J1re7aDwb/pOjGav/yp7prU3EK/ve2K3tMiZ/5rFXyznCoF+Foj+e5Sg==",
   "success": true,
   "projectFilePath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Hospital_System_Blazor\\Hospital_System_Blazor.csproj",
   "expectedPackageFiles": [
@@ -153,7 +153,7 @@
     "C:\\Users\\admin\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.16\\microsoft.netcore.app.runtime.mono.browser-wasm.6.0.16.nupkg.sha512"
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.5\\microsoft.netcore.app.runtime.mono.browser-wasm.7.0.5.nupkg.sha512"
   ],
   "logs": []
 }

@@ -14,6 +14,12 @@ namespace Labs_EF.Entities
         [Required(ErrorMessage = "The field is required!")]
         public Specialty Specialty { get; set; }
 
+        [Required(ErrorMessage = "The field is required!")]
+        public string Password_hash { get; set; } = string.Empty;
+
+        [Required(ErrorMessage = "The field is required!")]
+        public string Email { get; set; } = string.Empty;
+
         public ICollection<Visitations> Visitations { get; set; } = null!;
     }
 }

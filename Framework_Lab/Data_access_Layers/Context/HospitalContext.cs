@@ -44,7 +44,7 @@ namespace Labs_EF.DataContext
             }
 
             #region Generate all data using Bogus Library
-            /*DataGenerator.Generate_all_Data();
+           /* DataGenerator.Generate_all_Data();
               modelBuilder.Entity<Patients>().HasData(DataGenerator.Patients);
               modelBuilder.Entity<Doctors>().HasData(DataGenerator.Doctors);
               modelBuilder.Entity<Visitations>().HasData(DataGenerator.Visitations);

@@ -1,7 +1,9 @@
-﻿using Hospital_System.Data_transfer_objects.Response_Results;
+﻿using BCrypt.Net;
+using Hospital_System.Data_transfer_objects.Response_Results;
 using Hospital_System.Data_transfer_objects.Services_Interfaces.Interfaces;
 using Labs_EF.Entities;
 using Labs_EF.Repositories.Interfaces;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,10 +14,35 @@ namespace Labs_EF.Controllers
     public class DoctorsController : ControllerBase
     {
         private readonly IDoctorsServices _Doctors_Services;
+        private readonly UserManager<IdentityUser> _User_Manager;
 
-        public DoctorsController(IDoctorsServices doctors_Services)
+        public DoctorsController(IDoctorsServices doctors_Services, UserManager<IdentityUser> user_Manager = null)
         {
             _Doctors_Services = doctors_Services;
+            _User_Manager = user_Manager;
+        }
+
+        [HttpPost("Registration")]
+        public async Task<ActionResult<Doctors>> Registration(Get_Doctors_Result_DTO response)
+        {
+            if (!ModelState.IsValid)
+            {
+                return StatusCode(StatusCodes.Status400BadRequest, 
+                    $"Something went wrong in Model State...");
+            }
+
+            var result = await _User_Manager.CreateAsync
+                (new IdentityUser() { UserName = response.Doctors_name, Email = response.Email }, 
+                BCrypt.Net.BCrypt.HashPassword(response.Password_hash));
+
+            if (!result.Succeeded)
+            {
+                return StatusCode(StatusCodes.Status400BadRequest, 
+                    $"Something went wrong in Result... {result.Errors}");
+            }
+
+            response.Password_hash = string.Empty;
+            return Created(string.Empty, result);
         }
 
         [HttpGet("Get_all_Employees")]

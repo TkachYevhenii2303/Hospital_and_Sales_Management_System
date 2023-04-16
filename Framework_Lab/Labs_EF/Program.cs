@@ -8,6 +8,7 @@ using Labs_EF.Repositories;
 using Labs_EF.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -47,9 +48,19 @@ builder.Services.AddHttpClient<IEmployeeServices, EmployeeServices>(configuratio
     configuration.BaseAddress = new Uri("https://localhost:7170/");
 });
 
+// Set hte configurations for the Identity Server 
+builder.Services.AddIdentityCore<IdentityUser>(options =>
+{
+    options.SignIn.RequireConfirmedAccount = false;
+    options.User.RequireUniqueEmail = true;
+    options.Password.RequireDigit = false;
+    options.Password.RequiredLength = 6;
+    options.Password.RequireNonAlphanumeric = false;
+    options.Password.RequireUppercase = false;
+    options.Password.RequireLowercase = false;
+}).AddEntityFrameworkStores<HospitalContext>();
+
 var app = builder.Build();
-
-
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
