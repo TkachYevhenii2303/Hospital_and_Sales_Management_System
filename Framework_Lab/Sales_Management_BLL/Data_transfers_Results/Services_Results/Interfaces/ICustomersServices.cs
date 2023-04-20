@@ -14,9 +14,9 @@ namespace Sales_Management_BLL.Data_transfers_Results.Services_Results
 
         public Task<GET_Customers_Response_DTO> Get_Customer_ID(Guid ID);
 
-        public Task<IEnumerable<GET_Customers_Response_DTO>> Insert_Customers(INSERT_Customers_Response_DTO doctors);
+        public Task<IEnumerable<GET_Customers_Response_DTO>> Insert_Customers(INSERT_Customers_Response_DTO customer_transfer);
 
-        public Task<IEnumerable<GET_Customers_Response_DTO>> Update_Customers(INSERT_Customers_Response_DTO doctors);
+        public Task<IEnumerable<GET_Customers_Response_DTO>> Update_Customers(UPDATE_Customers_Response customer_transfer);
 
         public Task<IEnumerable<GET_Customers_Response_DTO>> Delete_Customers(Guid ID);
     }

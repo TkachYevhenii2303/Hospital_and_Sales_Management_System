@@ -5,6 +5,7 @@ using Hospital_System.Data_transfer_objects.Services_Interfaces.Interfaces;
 using Labs_EF.Entities;
 using Labs_EF.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore.Query.Internal;
+using System.Linq.Expressions;
 
 namespace Hospital_System.Data_transfer_objects.Services_Interfaces
 {
@@ -64,7 +65,7 @@ namespace Hospital_System.Data_transfer_objects.Services_Interfaces
         {
             var result = _unit_Of_Work.Doctros_Repository.Find_with_Specifications_Pattern(new DoctorsSpecializations(speciality));
 
-            return _mapper.Map<IEnumerable<Doctors>, IEnumerable<Get_Doctors_Result_DTO>>(result);
+            return _mapper.ProjectTo<Get_Doctors_Result_DTO>(result.AsQueryable());
         }
 
         public async Task<IEnumerable<string>> Get_all_Specialities()

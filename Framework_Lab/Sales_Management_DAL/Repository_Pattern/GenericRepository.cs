@@ -43,6 +43,7 @@ namespace Labs_EF.Repositories
             entity.Updated_at = DateTime.Now;
 
             await _context.Set<TEntity>().AddAsync(entity);
+
             return await _context.Set<TEntity>().ToListAsync();
         }
 
@@ -60,6 +61,8 @@ namespace Labs_EF.Repositories
                 }
 
                 _context.Set<TEntity>().Update(entity);
+                _context.SaveChanges();
+
                 return await _context.Set<TEntity>().ToListAsync();
             }
             catch (Exception exception)

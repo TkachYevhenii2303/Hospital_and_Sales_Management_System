@@ -1,0 +1,14 @@
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Sales_Management_DAL\bin\Debug\net6.0\Sales_Management_DAL.deps.json
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Sales_Management_DAL\bin\Debug\net6.0\Sales_Management_DAL.dll
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Sales_Management_DAL\bin\Debug\net6.0\Sales_Management_DAL.pdb
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Sales_Management_DAL\obj\Debug\net6.0\Sales_Management_DAL.csproj.AssemblyReference.cache
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Sales_Management_DAL\obj\Debug\net6.0\Sales_Management_DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Sales_Management_DAL\obj\Debug\net6.0\Sales_Management_DAL.AssemblyInfoInputs.cache
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Sales_Management_DAL\obj\Debug\net6.0\Sales_Management_DAL.AssemblyInfo.cs
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Sales_Management_DAL\obj\Debug\net6.0\Sales_Management_DAL.csproj.CoreCompileInputs.cache
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Sales_Management_DAL\obj\Debug\net6.0\Sales_Management_DAL.dll
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Sales_Management_DAL\obj\Debug\net6.0\refint\Sales_Management_DAL.dll
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Sales_Management_DAL\obj\Debug\net6.0\Sales_Management_DAL.pdb
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Sales_Management_DAL\obj\Debug\net6.0\ref\Sales_Management_DAL.dll
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Sales_Management_DAL\bin\Debug\net6.0\Sales_Management_DAL.runtimeconfig.json
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Sales_Management_DAL\obj\Debug\net6.0\Sales_Management_DAL.genruntimeconfig.cache

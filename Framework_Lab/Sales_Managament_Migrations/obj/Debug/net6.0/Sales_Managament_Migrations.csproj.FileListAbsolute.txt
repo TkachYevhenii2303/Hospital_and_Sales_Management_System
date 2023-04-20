@@ -1,0 +1,17 @@
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Sales_Managament_Migrations\bin\Debug\net6.0\Sales_Managament_Migrations.deps.json
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Sales_Managament_Migrations\bin\Debug\net6.0\Sales_Managament_Migrations.runtimeconfig.json
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Sales_Managament_Migrations\bin\Debug\net6.0\Sales_Managament_Migrations.dll
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Sales_Managament_Migrations\bin\Debug\net6.0\Sales_Managament_Migrations.pdb
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Sales_Managament_Migrations\bin\Debug\net6.0\Sales_Management_DAL.dll
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Sales_Managament_Migrations\bin\Debug\net6.0\Sales_Management_DAL.pdb
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Sales_Managament_Migrations\obj\Debug\net6.0\Sales_Managament_Migrations.csproj.AssemblyReference.cache
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Sales_Managament_Migrations\obj\Debug\net6.0\Sales_Managament_Migrations.GeneratedMSBuildEditorConfig.editorconfig
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Sales_Managament_Migrations\obj\Debug\net6.0\Sales_Managament_Migrations.AssemblyInfoInputs.cache
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Sales_Managament_Migrations\obj\Debug\net6.0\Sales_Managament_Migrations.AssemblyInfo.cs
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Sales_Managament_Migrations\obj\Debug\net6.0\Sales_Managament_Migrations.csproj.CoreCompileInputs.cache
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Sales_Managament_Migrations\obj\Debug\net6.0\Sales_Managament_Migrations.csproj.CopyComplete
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Sales_Managament_Migrations\obj\Debug\net6.0\Sales_Managament_Migrations.dll
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Sales_Managament_Migrations\obj\Debug\net6.0\refint\Sales_Managament_Migrations.dll
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Sales_Managament_Migrations\obj\Debug\net6.0\Sales_Managament_Migrations.pdb
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Sales_Managament_Migrations\obj\Debug\net6.0\Sales_Managament_Migrations.genruntimeconfig.cache
+D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Sales_Managament_Migrations\obj\Debug\net6.0\ref\Sales_Managament_Migrations.dll

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Sales_Management_BLL.Data_transfers_Results.Response_Results_DTO
@@ -11,6 +12,7 @@ namespace Sales_Management_BLL.Data_transfers_Results.Response_Results_DTO
         where TData_transfer : class, new()
         where TEntity : class, new()    
     {
+        [JsonPropertyName("ID:")]
         public Guid ID { get; set; }
 
         private TypeAdapterConfig? Configurations { get; set; } 

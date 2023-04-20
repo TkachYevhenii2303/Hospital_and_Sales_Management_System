@@ -1,7 +1,5 @@
 using Hospital_System.Data_transfer_objects.Services_Interfaces;
 using Hospital_System.Data_transfer_objects.Services_Interfaces.Interfaces;
-using Hospital_System_Blazor.Services;
-using Hospital_System_Blazor.Services.Interfaces;
 using Labs_EF.DataContext;
 using Labs_EF.Generator;
 using Labs_EF.Repositories;
@@ -10,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.Identity;
 using Labs_EF.Entities;
+using AutoMapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -42,12 +41,6 @@ builder.Services
     .AddScoped<IDoctrosRepository, DoctorsRepository>()
     .AddScoped<IDoctorsServices, DoctorsServices>();
 
-// Blazor Dependency
-builder.Services.AddSingleton<EmployeeServices>();
-builder.Services.AddHttpClient<IEmployeeServices, EmployeeServices>(configuration =>
-{
-    configuration.BaseAddress = new Uri("https://localhost:7170/");
-});
 
 // Set hte configurations for the Identity Server 
 builder.Services.AddIdentityCore<IdentityUser>(options =>

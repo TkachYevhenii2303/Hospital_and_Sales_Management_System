@@ -8,11 +8,17 @@
 
   <ItemGroup>
     <PackageReference Include="Mapster" Version="7.3.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Sales_Managament_Migrations\Sales_Managament_Migrations.csproj" />
     <ProjectReference Include="..\Sales_Management_BLL\Sales_Management_BLL.csproj" />
     <ProjectReference Include="..\Sales_Management_DAL\Sales_Management_DAL.csproj" />
   </ItemGroup>

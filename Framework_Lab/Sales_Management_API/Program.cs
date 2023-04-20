@@ -1,6 +1,10 @@
+using Labs_EF.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Sales_Management_BLL.Data_transfers_Results.Configurations.Webframework;
+using Sales_Management_BLL.Data_transfers_Results.Services_Results;
 using Sales_Management_DAL.Context.Base_Context;
+using Sales_Management_DAL.Repositories;
+using Sales_Management_DAL.Repositories.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,8 +18,13 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<SalesContext>(configurations =>
 {
-    configurations.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnections"));
+    configurations.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnections"), 
+        options => options.MigrationsAssembly("Sales_Managament_Migrations"));
 });
+
+builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+builder.Services.AddScoped<IUnit_of_Work, Unit_of_Work>();
+builder.Services.AddScoped<ICustomersServices, CustomerServices>();
 
 var app = builder.Build();
 

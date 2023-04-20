@@ -26,22 +26,22 @@ namespace Sales_Management_DAL.Bogus_Generator
             Customers = new Faker<Customers>()
                 .RuleFor(x => x.Customers_title, f => f.Person.FullName)
                 .RuleFor(x => x.Customers_email, (f, o) => f.Internet.Email(o.Customers_title))
-                .RuleFor(x => x.ID, _ = Guid.NewGuid()).Generate(CUSTOMERS);
+                .RuleFor(x => x.ID, _ => Guid.NewGuid()).Generate(CUSTOMERS);
 
             Products = new Faker<Products>()
                 .RuleFor(x => x.Products_title, f => f.Commerce.Product())
                 .RuleFor(x => x.Products_count, f => f.Random.Int())
-                .RuleFor(x => x.ID, _ = Guid.NewGuid()).Generate(PRODUCTS);
+                .RuleFor(x => x.ID, _ => Guid.NewGuid()).Generate(PRODUCTS);
 
             Stores = new Faker<Stores>()
                 .RuleFor(x => x.Stores_title, f => f.Commerce.Department())
-                .RuleFor(x => x.ID, _ = Guid.NewGuid()).Generate(STORES);
+                .RuleFor(x => x.ID, _ => Guid.NewGuid()).Generate(STORES);
 
             Sales = new Faker<Sales>()
                 .RuleFor(x => x.Customers_ID, f => f.PickRandom(Customers).ID)
                 .RuleFor(x => x.Products_ID, f => f.PickRandom(Products).ID)
                 .RuleFor(x => x.Stores_ID, f => f.PickRandom(Stores).ID)
-                .RuleFor(x => x.ID, _ = Guid.NewGuid()).Generate(SALES);
+                .RuleFor(x => x.ID, _ => Guid.NewGuid()).Generate(SALES);
         }
     }
 }

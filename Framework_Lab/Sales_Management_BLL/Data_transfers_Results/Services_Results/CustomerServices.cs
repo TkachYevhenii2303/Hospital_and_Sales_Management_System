@@ -1,7 +1,9 @@
 ﻿using Mapster;
 using MapsterMapper;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Sales_Management_BLL.Data_transfers_Results.Request_Results_DTO;
 using Sales_Management_BLL.Data_transfers_Results.Response_Results_DTO;
+using Sales_Management_DAL.Entities;
 using Sales_Management_DAL.Repositories.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -27,26 +29,46 @@ namespace Sales_Management_BLL.Data_transfers_Results.Services_Results
 
         public async Task<IEnumerable<GET_Customers_Response_DTO>> Get_all_Customers()
         {
-            var result = _unit_Of_Work.Customers_Repository.Get_all_Information().Adapt<GET_Customers_Response_DTO[]>();
-
-             _unit_Of_Work.Complete();
+            var customers = await _unit_Of_Work.Customers_Repository.Get_all_Information();
+            var result = customers.Adapt<GET_Customers_Response_DTO[]>();
             
             return result;
         }
 
-        public Task<GET_Customers_Response_DTO> Get_Customer_ID(Guid ID)
+        public async Task<GET_Customers_Response_DTO> Get_Customer_ID(Guid ID)
         {
-            throw new NotImplementedException();
+            var customer = await _unit_Of_Work.Customers_Repository.Get_information_ID(ID);
+
+            if (customer is null)
+            {
+                throw new ArgumentNullException($"The customers with ID: {ID} is null!");
+            }
+
+            var result = customer.Adapt<GET_Customers_Response_DTO>();
+
+            return result;
         }
 
-        public Task<IEnumerable<GET_Customers_Response_DTO>> Insert_Customers(INSERT_Customers_Response_DTO doctors)
+        public async Task<IEnumerable<GET_Customers_Response_DTO>> Insert_Customers(INSERT_Customers_Response_DTO customer_transfer)
         {
-            throw new NotImplementedException();
+            var customers = await _unit_Of_Work.Customers_Repository.Insert_Entity(customer_transfer.Entity_to());
+            
+            _unit_Of_Work.Complete();
+
+            var result = customers.Adapt<GET_Customers_Response_DTO[]>();
+
+            return result;
         }
 
-        public Task<IEnumerable<GET_Customers_Response_DTO>> Update_Customers(INSERT_Customers_Response_DTO doctors)
+        public async Task<IEnumerable<GET_Customers_Response_DTO>> Update_Customers(UPDATE_Customers_Response customer_transfer)
         {
-            throw new NotImplementedException();
+            var customers = await _unit_Of_Work.Customers_Repository.Update_Entity(customer_transfer.Entity_to());
+
+            _unit_Of_Work.Complete();
+
+            var result = customers.Adapt<GET_Customers_Response_DTO[]>();
+
+            return result;
         }
     }
 }

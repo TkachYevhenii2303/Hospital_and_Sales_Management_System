@@ -24,6 +24,8 @@ namespace Labs_EF.Repositories
 
             _context.Set<TEntity>().Remove(result);
 
+            await _context.SaveChangesAsync();
+
             return await _context.Set<TEntity>().ToListAsync();
         }
 
