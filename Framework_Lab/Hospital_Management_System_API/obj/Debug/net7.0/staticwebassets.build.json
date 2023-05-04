@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "WFhVoHWxdlLccycl+Y7lhL2IbqUtNsWFehC1kzm4K7M=",
-  "Source": "Hospital_System",
-  "BasePath": "_content/Hospital_System",
+  "Hash": "wu/nDBub7++bYr3nqETt6V5/eRjwxEn7Xo5I5oxWWk0=",
+  "Source": "Hospital_Management_System_API",
+  "BasePath": "_content/Hospital_Management_System_API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

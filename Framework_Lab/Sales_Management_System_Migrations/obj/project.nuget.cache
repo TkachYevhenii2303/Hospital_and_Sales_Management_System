@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XwuOW4e3IyLZtGqiykOOJg7cjtcfRQN1pd8r7EFpfBAJ2BaL2dn2VhzGtWokPGVZZ4MNNp/yuAB5MsbBNnZc0g==",
+  "dgSpecHash": "umiNEJNAwQpDoJ7bVvURVUOPp50uAV+RHy3oA2pyd4z2gbcXIWOgmLMyJxOQY71LbR4egh2IV/q5KNrrb/ezfg==",
   "success": true,
-  "projectFilePath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Sales_Managament_Migrations\\Sales_Managament_Migrations.csproj",
+  "projectFilePath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Sales_Management_System_Migrations\\Sales_Managament_System_Migrations.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

@@ -18,9 +18,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Sales_Managament_Migrations\Sales_Managament_Migrations.csproj" />
-    <ProjectReference Include="..\Sales_Management_BLL\Sales_Management_BLL.csproj" />
-    <ProjectReference Include="..\Sales_Management_DAL\Sales_Management_DAL.csproj" />
+    <ProjectReference Include="..\Sales_Management_System_BLL\Sales_Management_System_BLL.csproj" />
+    <ProjectReference Include="..\Sales_Management_System_DAL\Sales_Management_System_DAL.csproj" />
+    <ProjectReference Include="..\Sales_Management_System_Migrations\Sales_Managament_System_Migrations.csproj" />
   </ItemGroup>
 
 </Project>

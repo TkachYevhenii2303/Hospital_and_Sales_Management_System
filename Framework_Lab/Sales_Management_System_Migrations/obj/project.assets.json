@@ -1233,7 +1233,7 @@
           }
         }
       },
-      "Sales_Management_DAL/1.0.0": {
+      "Sales_Management_System_DAL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -1244,10 +1244,10 @@
           "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
-          "bin/placeholder/Sales_Management_DAL.dll": {}
+          "bin/placeholder/Sales_Management_System_DAL.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Sales_Management_DAL.dll": {}
+          "bin/placeholder/Sales_Management_System_DAL.dll": {}
         }
       }
     }
@@ -3713,10 +3713,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Sales_Management_DAL/1.0.0": {
+    "Sales_Management_System_DAL/1.0.0": {
       "type": "project",
-      "path": "../Sales_Management_DAL/Sales_Management_DAL.csproj",
-      "msbuildProject": "../Sales_Management_DAL/Sales_Management_DAL.csproj"
+      "path": "../Sales_Management_System_DAL/Sales_Management_System_DAL.csproj",
+      "msbuildProject": "../Sales_Management_System_DAL/Sales_Management_System_DAL.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3725,7 +3725,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 7.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.5",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.5",
-      "Sales_Management_DAL >= 1.0.0"
+      "Sales_Management_System_DAL >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3734,11 +3734,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Sales_Managament_Migrations\\Sales_Managament_Migrations.csproj",
-      "projectName": "Sales_Managament_Migrations",
-      "projectPath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Sales_Managament_Migrations\\Sales_Managament_Migrations.csproj",
+      "projectUniqueName": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Sales_Management_System_Migrations\\Sales_Managament_System_Migrations.csproj",
+      "projectName": "Sales_Managament_System_Migrations",
+      "projectPath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Sales_Management_System_Migrations\\Sales_Managament_System_Migrations.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Sales_Managament_Migrations\\obj\\",
+      "outputPath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Sales_Management_System_Migrations\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3755,8 +3755,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Sales_Management_DAL\\Sales_Management_DAL.csproj": {
-              "projectPath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Sales_Management_DAL\\Sales_Management_DAL.csproj"
+            "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Sales_Management_System_DAL\\Sales_Management_System_DAL.csproj": {
+              "projectPath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Sales_Management_System_DAL\\Sales_Management_System_DAL.csproj"
             }
           }
         }

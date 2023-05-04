@@ -27,8 +27,11 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
-    <ProjectReference Include="..\Business_logic_Layer\Business_logic_Layer.csproj" />
-    <ProjectReference Include="..\Data_access_Layers\Data_access_Layers.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hospital_Management_System_BLL\Hospital_Management_System_BLL.csproj" />
+    <ProjectReference Include="..\Hospital_Management_System_DAL\Hospital_Management_System_DAL.csproj" />
   </ItemGroup>
 
 </Project>

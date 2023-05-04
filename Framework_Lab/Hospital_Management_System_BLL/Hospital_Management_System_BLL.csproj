@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Data_access_Layers\Data_access_Layers.csproj" />
+    <ProjectReference Include="..\Hospital_Management_System_DAL\Hospital_Management_System_DAL.csproj" />
   </ItemGroup>
 
 </Project>

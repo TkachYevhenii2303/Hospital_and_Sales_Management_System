@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sRz+ix35WKftqjwb97kjDjJD+O8NmYfrd1gr8/LGiEW9JcprMpNjh1XN3RyIsHKcIi5cQMuYX9vPcK+4TatBdQ==",
+  "dgSpecHash": "o1wP4VbSC88xO13F04BO9MGgMfHNyk6zj5SzG7Hp7YTIrOUWZYXva6Roy8M+DWdEUFWiS+U9sJydeLBhj/V22Q==",
   "success": true,
-  "projectFilePath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Sales_Management_DAL\\Sales_Management_DAL.csproj",
+  "projectFilePath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Sales_Management_System_DAL\\Sales_Management_System_DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

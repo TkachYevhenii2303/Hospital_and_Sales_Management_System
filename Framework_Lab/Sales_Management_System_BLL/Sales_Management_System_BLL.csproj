@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Sales_Management_DAL\Sales_Management_DAL.csproj" />
+    <ProjectReference Include="..\Sales_Management_System_DAL\Sales_Management_System_DAL.csproj" />
   </ItemGroup>
 
 </Project>

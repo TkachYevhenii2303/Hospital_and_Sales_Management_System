@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "o5NXrfB2JVh9XM2eg8GwGUo0D45GK3EnW4h/RnAqIuY=",
-  "Source": "Sales_Management_API",
-  "BasePath": "_content/Sales_Management_API",
+  "Hash": "e1ORx4AHkj0VY+HYjQ5QZqXeF5kZKi+VOdkfwqS+R3Y=",
+  "Source": "Sales_Management_System_API",
+  "BasePath": "_content/Sales_Management_System_API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

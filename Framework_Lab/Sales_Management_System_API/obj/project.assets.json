@@ -1321,22 +1321,37 @@
           }
         }
       },
-      "Sales_Management_BLL/1.0.0": {
+      "Sales_Managament_System_Migrations/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.5",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
+          "Sales_Management_System_DAL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Sales_Managament_System_Migrations.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Sales_Managament_System_Migrations.dll": {}
+        }
+      },
+      "Sales_Management_System_BLL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Mapster": "7.3.0",
           "Newtonsoft.Json": "13.0.3",
-          "Sales_Management_DAL": "1.0.0"
+          "Sales_Management_System_DAL": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Sales_Management_BLL.dll": {}
+          "bin/placeholder/Sales_Management_System_BLL.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Sales_Management_BLL.dll": {}
+          "bin/placeholder/Sales_Management_System_BLL.dll": {}
         }
       },
-      "Sales_Management_DAL/1.0.0": {
+      "Sales_Management_System_DAL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -1347,10 +1362,10 @@
           "System.Configuration.ConfigurationManager": "7.0.0"
         },
         "compile": {
-          "bin/placeholder/Sales_Management_DAL.dll": {}
+          "bin/placeholder/Sales_Management_System_DAL.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Sales_Management_DAL.dll": {}
+          "bin/placeholder/Sales_Management_System_DAL.dll": {}
         }
       }
     }
@@ -3946,26 +3961,31 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Sales_Management_BLL/1.0.0": {
+    "Sales_Managament_System_Migrations/1.0.0": {
       "type": "project",
-      "path": "../Sales_Management_BLL/Sales_Management_BLL.csproj",
-      "msbuildProject": "../Sales_Management_BLL/Sales_Management_BLL.csproj"
+      "path": "../Sales_Management_System_Migrations/Sales_Managament_System_Migrations.csproj",
+      "msbuildProject": "../Sales_Management_System_Migrations/Sales_Managament_System_Migrations.csproj"
     },
-    "Sales_Management_DAL/1.0.0": {
+    "Sales_Management_System_BLL/1.0.0": {
       "type": "project",
-      "path": "../Sales_Management_DAL/Sales_Management_DAL.csproj",
-      "msbuildProject": "../Sales_Management_DAL/Sales_Management_DAL.csproj"
+      "path": "../Sales_Management_System_BLL/Sales_Management_System_BLL.csproj",
+      "msbuildProject": "../Sales_Management_System_BLL/Sales_Management_System_BLL.csproj"
+    },
+    "Sales_Management_System_DAL/1.0.0": {
+      "type": "project",
+      "path": "../Sales_Management_System_DAL/Sales_Management_System_DAL.csproj",
+      "msbuildProject": "../Sales_Management_System_DAL/Sales_Management_System_DAL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Sales_Managament_Migrations\\Sales_Managament_System_Migrations.csproj",
       "Mapster >= 7.3.0",
       "Microsoft.EntityFrameworkCore >= 7.0.5",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.5",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.5",
-      "Sales_Management_BLL >= 1.0.0",
-      "Sales_Management_DAL >= 1.0.0",
+      "Sales_Managament_System_Migrations >= 1.0.0",
+      "Sales_Management_System_BLL >= 1.0.0",
+      "Sales_Management_System_DAL >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -3975,11 +3995,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Sales_Management_API\\Sales_Management_API.csproj",
-      "projectName": "Sales_Management_API",
-      "projectPath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Sales_Management_API\\Sales_Management_API.csproj",
+      "projectUniqueName": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Sales_Management_System_API\\Sales_Management_System_API.csproj",
+      "projectName": "Sales_Management_System_API",
+      "projectPath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Sales_Management_System_API\\Sales_Management_System_API.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Sales_Management_API\\obj\\",
+      "outputPath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Sales_Management_System_API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3996,14 +4016,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Sales_Managament_Migrations\\Sales_Managament_System_Migrations.csproj": {
-              "projectPath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Sales_Managament_Migrations\\Sales_Managament_System_Migrations.csproj"
+            "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Sales_Management_System_BLL\\Sales_Management_System_BLL.csproj": {
+              "projectPath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Sales_Management_System_BLL\\Sales_Management_System_BLL.csproj"
             },
-            "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Sales_Management_BLL\\Sales_Management_BLL.csproj": {
-              "projectPath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Sales_Management_BLL\\Sales_Management_BLL.csproj"
+            "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Sales_Management_System_DAL\\Sales_Management_System_DAL.csproj": {
+              "projectPath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Sales_Management_System_DAL\\Sales_Management_System_DAL.csproj"
             },
-            "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Sales_Management_DAL\\Sales_Management_DAL.csproj": {
-              "projectPath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Sales_Management_DAL\\Sales_Management_DAL.csproj"
+            "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Sales_Management_System_Migrations\\Sales_Managament_System_Migrations.csproj": {
+              "projectPath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Sales_Management_System_Migrations\\Sales_Managament_System_Migrations.csproj"
             }
           }
         }
@@ -4063,16 +4083,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1105",
-      "level": "Error",
-      "message": "Unable to find project information for 'D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Sales_Managament_Migrations\\Sales_Managament_System_Migrations.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
-      "libraryId": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Sales_Managament_Migrations\\Sales_Managament_System_Migrations.csproj",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  }
 }
