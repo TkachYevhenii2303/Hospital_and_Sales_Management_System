@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Hospital_Management_System_DAL
-build_property.ProjectDir = D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Data_access_Layers\
+build_property.ProjectDir = D:\Education - Programming and Books\Learning ASP.NET Core\ASP.NET Core Lessons\Framework_Labs\Framework_Lab\Hospital_Management_System_DAL\

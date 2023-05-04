@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hospital_Management_System_
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hospital_System", "Hospital_System", "{2C620795-C75B-45F9-B07C-DBAE0062D648}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hospital_Management_System_DAL", "Data_access_Layers\Hospital_Management_System_DAL.csproj", "{85E04A61-DD30-46D2-8FBF-91EF4E638B5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hospital_Management_System_DAL", "Hospital_Management_System_DAL\Hospital_Management_System_DAL.csproj", "{85E04A61-DD30-46D2-8FBF-91EF4E638B5C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hospital_Management_System_BLL", "Business_logic_Layer\Hospital_Management_System_BLL.csproj", "{F4982776-1C78-45FF-87D3-F1AB56E64E74}"
 EndProject

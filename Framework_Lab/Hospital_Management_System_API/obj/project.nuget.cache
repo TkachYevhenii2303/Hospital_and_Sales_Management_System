@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CdCktRcjsTqstfXZOhETiD9flHD0Jy4Ywq0JI67gqHPLjWOIggML/vdSzmgvCG/L9ZKMUIfgd7W111n6epKPWg==",
+  "dgSpecHash": "b4IrvSrqjeQLi9y92KpAvgPkfON4evCIk/1XWZo+9SLnazzVkKQJZaKAt7X4ZWJEF1GyDVCqIfFD62mp58tMgw==",
   "success": true,
-  "projectFilePath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Labs_EF\\Hospital_Management_System_API.csproj",
+  "projectFilePath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Hospital_Management_System_API\\Hospital_Management_System_API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\automapper.collection\\9.0.0\\automapper.collection.9.0.0.nupkg.sha512",
