@@ -1732,7 +1732,7 @@
           }
         }
       },
-      "Data_access_Layers/1.0.0": {
+      "Hospital_Management_System_DAL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
@@ -1746,10 +1746,10 @@
           "Microsoft.Extensions.Logging.Debug": "7.0.0"
         },
         "compile": {
-          "bin/placeholder/Data_access_Layers.dll": {}
+          "bin/placeholder/Hospital_Management_System_DAL.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Data_access_Layers.dll": {}
+          "bin/placeholder/Hospital_Management_System_DAL.dll": {}
         }
       }
     }
@@ -5101,15 +5101,15 @@
         "version.txt"
       ]
     },
-    "Data_access_Layers/1.0.0": {
+    "Hospital_Management_System_DAL/1.0.0": {
       "type": "project",
-      "path": "../Data_access_Layers/Data_access_Layers.csproj",
-      "msbuildProject": "../Data_access_Layers/Data_access_Layers.csproj"
+      "path": "../Data_access_Layers/Hospital_Management_System_DAL.csproj",
+      "msbuildProject": "../Data_access_Layers/Hospital_Management_System_DAL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Data_access_Layers >= 1.0.0",
+      "Hospital_Management_System_DAL >= 1.0.0",
       "System.Linq.Expressions >= 4.3.0"
     ]
   },
@@ -5119,9 +5119,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Business_logic_Layer\\Business_logic_Layer.csproj",
-      "projectName": "Business_logic_Layer",
-      "projectPath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Business_logic_Layer\\Business_logic_Layer.csproj",
+      "projectUniqueName": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Business_logic_Layer\\Hospital_Management_System_BLL.csproj",
+      "projectName": "Hospital_Management_System_BLL",
+      "projectPath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Business_logic_Layer\\Hospital_Management_System_BLL.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
       "outputPath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Business_logic_Layer\\obj\\",
       "projectStyle": "PackageReference",
@@ -5140,8 +5140,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Data_access_Layers\\Data_access_Layers.csproj": {
-              "projectPath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Data_access_Layers\\Data_access_Layers.csproj"
+            "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Data_access_Layers\\Hospital_Management_System_DAL.csproj": {
+              "projectPath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Data_access_Layers\\Hospital_Management_System_DAL.csproj"
             }
           }
         }

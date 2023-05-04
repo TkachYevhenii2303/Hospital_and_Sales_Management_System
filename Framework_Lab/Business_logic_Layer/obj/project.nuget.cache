@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LMjo7WyZ+MMS1iNqgFUFSAqQNzM6ih++XlqcKzc3zdXdZDdgzIt3JqylKcIxn+lACoyreWWfEplamiRWrZnTVA==",
+  "dgSpecHash": "kSTbtVEoJUt9iCVWY/B7Fgy69OwbWrM2CpCU4hN2UG7/cj1iDrHXsYinRd2Ve49s4CnJxpFILCFMQZha8e8zng==",
   "success": true,
-  "projectFilePath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Business_logic_Layer\\Business_logic_Layer.csproj",
+  "projectFilePath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Business_logic_Layer\\Hospital_Management_System_BLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",

@@ -4431,9 +4431,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Data_access_Layers\\Data_access_Layers.csproj",
-      "projectName": "Data_access_Layers",
-      "projectPath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Data_access_Layers\\Data_access_Layers.csproj",
+      "projectUniqueName": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Data_access_Layers\\Hospital_Management_System_DAL.csproj",
+      "projectName": "Hospital_Management_System_DAL",
+      "projectPath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Data_access_Layers\\Hospital_Management_System_DAL.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
       "outputPath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Data_access_Layers\\obj\\",
       "projectStyle": "PackageReference",

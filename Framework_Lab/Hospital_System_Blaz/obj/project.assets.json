@@ -2497,7 +2497,7 @@
           }
         }
       },
-      "Data_access_Layers/1.0.0": {
+      "Hospital_Management_System_DAL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
@@ -2511,10 +2511,10 @@
           "Microsoft.Extensions.Logging.Debug": "7.0.0"
         },
         "compile": {
-          "bin/placeholder/Data_access_Layers.dll": {}
+          "bin/placeholder/Hospital_Management_System_DAL.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Data_access_Layers.dll": {}
+          "bin/placeholder/Hospital_Management_System_DAL.dll": {}
         }
       }
     },
@@ -4916,7 +4916,7 @@
           }
         }
       },
-      "Data_access_Layers/1.0.0": {
+      "Hospital_Management_System_DAL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
@@ -4930,10 +4930,10 @@
           "Microsoft.Extensions.Logging.Debug": "7.0.0"
         },
         "compile": {
-          "bin/placeholder/Data_access_Layers.dll": {}
+          "bin/placeholder/Hospital_Management_System_DAL.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Data_access_Layers.dll": {}
+          "bin/placeholder/Hospital_Management_System_DAL.dll": {}
         }
       }
     }
@@ -9836,15 +9836,15 @@
         "version.txt"
       ]
     },
-    "Data_access_Layers/1.0.0": {
+    "Hospital_Management_System_DAL/1.0.0": {
       "type": "project",
-      "path": "../Data_access_Layers/Data_access_Layers.csproj",
-      "msbuildProject": "../Data_access_Layers/Data_access_Layers.csproj"
+      "path": "../Data_access_Layers/Hospital_Management_System_DAL.csproj",
+      "msbuildProject": "../Data_access_Layers/Hospital_Management_System_DAL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Data_access_Layers >= 1.0.0",
+      "Hospital_Management_System_DAL >= 1.0.0",
       "Microsoft.AspNetCore.Components >= 7.0.5",
       "Microsoft.AspNetCore.Components.WebAssembly >= 6.0.14",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 6.0.14",
@@ -9881,8 +9881,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Data_access_Layers\\Data_access_Layers.csproj": {
-              "projectPath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Data_access_Layers\\Data_access_Layers.csproj"
+            "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Data_access_Layers\\Hospital_Management_System_DAL.csproj": {
+              "projectPath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Data_access_Layers\\Hospital_Management_System_DAL.csproj"
             }
           }
         }

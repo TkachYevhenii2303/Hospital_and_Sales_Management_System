@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Data_access_Layers\Data_access_Layers.csproj" />
+    <ProjectReference Include="..\Data_access_Layers\Hospital_Management_System_DAL.csproj" />
   </ItemGroup>
 
 </Project>

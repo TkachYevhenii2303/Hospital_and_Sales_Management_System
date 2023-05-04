@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "a4GqRzKdGFDlSQhS3P0NfX1RVMDOBy7kamFWV9VBRMe37HbfrYXj/qSxwSNZ0JVMfa3mw1cqTQodF4TKSFhKaQ==",
+  "dgSpecHash": "TW9xIWhvNOUdhidioKExpKDre+SLeEl/LkqXg2zwG75Q/3iQVj/JAhWqlUUOiz41PnTHL77boD3J0YEDBFn/Dg==",
   "success": true,
-  "projectFilePath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Data_access_Layers\\Data_access_Layers.csproj",
+  "projectFilePath": "D:\\Education - Programming and Books\\Learning ASP.NET Core\\ASP.NET Core Lessons\\Framework_Labs\\Framework_Lab\\Data_access_Layers\\Hospital_Management_System_DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
