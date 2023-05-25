@@ -40,6 +40,7 @@ namespace Labs_EF.Repositories
         public async Task<IEnumerable<TEntity>> Insert_Entity(TEntity entity)
         {
             entity.Created_at = DateTime.Now;
+
             entity.Updated_at = DateTime.Now;
 
             await _context.Set<TEntity>().AddAsync(entity);
@@ -61,6 +62,7 @@ namespace Labs_EF.Repositories
                 }
 
                 _context.Set<TEntity>().Update(entity);
+              
                 _context.SaveChanges();
 
                 return await _context.Set<TEntity>().ToListAsync();
